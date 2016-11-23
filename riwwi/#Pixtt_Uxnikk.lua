@@ -3,7 +3,7 @@ local min_players = 18;
 function event_say(e)
   local qglobals = eq.get_qglobals();
   if (e.message:findi("hail")) then
-    e:self:Say("It's a good thing Taskmistress Krisz doesn't know what we're up to.  Wow, does she have a temper, and enough skill with a blade to back it up.  No one would [" .. eq.say_link("dare", false, "dare") .. "] cross her.");
+    e.self:Say("It's a good thing Taskmistress Krisz doesn't know what we're up to.  Wow, does she have a temper, and enough skill with a blade to back it up.  No one would [" .. eq.say_link("dare", false, "dare") .. "] cross her.");
   end
 
   if (e.message:findi("dare")) then
